@@ -74,15 +74,15 @@ The target variable exhibits a ratio of approximately 7:1 (Low Risk:High Risk), 
 #### 2.1 Domain-Driven Feature Creation
 
 **Financial Ratios:**
-- Credit Utilization: $\text{CU} = \frac{\text{current\_balance}}{\text{credit\_limit}}$
-- Debt Service Coverage: $\text{DSC} = \frac{\text{normal\_payments}}{\text{total\_obligations}}$
+- Credit Utilization: $\text{CU} = \frac{\text{current balance}}{\text{credit limit}}$
+- Debt Service Coverage: $\text{DSC} = \frac{\text{normal payments}}{\text{total obligations}}$
 
 **Risk Indicators:**
-- Overdue Severity Score: $S = w_1 \cdot \text{OVD}_1 + w_2 \cdot \text{OVD}_2 + w_3 \cdot \text{OVD}_3$ 
-  where $w_1=1, w_2=3, w_3=10$ (escalating penalties for severity)
+- Overdue Severity Score: $S = w1 \cdot \text{OVD} 1 + w2 \cdot \text{OVD} 2 + w3 \cdot \text{OVD}_3$ 
+  where $w1=1, w2=3, w3=10$ (escalating penalties for severity)
 
 **Behavioral Features:**
-- Payment Reliability: $R = \frac{\text{normal\_payments}}{\text{normal\_payments} + \text{overdue\_sum} + \epsilon}$
+- Payment Reliability: $R = \frac{\text{normal payments}}{\text{normal payments} + \text{overdue sum} + \epsilon}$
 - Balance Stability: $\sigma_{normalized} = \frac{\sigma_{balance}}{\mu_{balance} + \epsilon}$
 
 **Interaction Terms:**
@@ -344,7 +344,3 @@ credit-risk-mlops/
 - European Banking Authority (EBA) - Model Risk Management Framework
 
 ---
-
-## Author
-
-Developed as part of an application for the Machine Learning Intern position at Qonto, focusing on quantitative risk modeling and MLOps best practices in regulated fintech environments.
